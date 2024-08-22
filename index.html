@@ -23,12 +23,6 @@
         .rotate-90 {
             transform: rotate(90deg);
         }
-
-        @media (max-width: 768px) {
-            .hide-on-sm {
-                display: none;
-            }
-        }
     </style>
 
 </head>
@@ -37,43 +31,33 @@
     <!-- Header Section -->
     <header class="md:container mx-auto">
         <!-- Navbar Section -->
-        <nav class="navbar bg-base-100">
-            <!-- Left Side - Logo -->
-            <div class="navbar-start">
-                <a class="text-xl font-bold inline-flex text-black" href="#">
-                    <svg fill="#000000" width="32px" height="32px" viewBox="0 0 24 24" id="up-left-arrow-circle"
-                        data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color rotate-90">
-                        <circle id="primary" cx="12" cy="12" r="10" style="fill: rgb(171, 239, 95);"></circle>
-                        <path id="secondary"
-                            d="M7.24,8.21l.7,3.73a1,1,0,0,0,1.55.57l.8-.8,4.54,4.53a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41l-4.53-4.54.8-.8a1,1,0,0,0-.57-1.55l-3.73-.7A.82.82,0,0,0,7.24,8.21Z"
-                            style="fill: rgb(28, 28, 28);"></path>
-                    </svg>Rinterio</a>
-            </div>
+    <nav class="navbar bg-[#F9F9F9] shadow-md px-4 py-3">
+        <!-- Left Side - Logo -->
+        <div class="navbar-start">
+            <a class="text-xl font-bold inline-flex text-black items-center" href="#">
+                <svg fill="#000000" width="32px" height="32px" viewBox="0 0 24 24" id="up-left-arrow-circle"
+                    data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color rotate-90">
+                    <circle id="primary" cx="12" cy="12" r="10" style="fill: rgb(171, 239, 95);"></circle>
+                    <path id="secondary"
+                        d="M7.24,8.21l.7,3.73a1,1,0,0,0,1.55.57l.8-.8,4.54,4.53a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41l-4.53-4.54.8-.8a1,1,0,0,0-.57-1.55l-3.73-.7A.82.82,0,0,0,7.24,8.21Z"
+                        style="fill: rgb(28, 28, 28);"></path>
+                </svg>
+                <span class="ml-2">Rinterio</span>
+            </a>
+        </div>
 
-            <!-- Mobile Dropdown Menu -->
-            <div class="navbar-start lg:hidden">
-                <div class="dropdown dropdown-bottom dropdown-end">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            class="inline-block h-5 w-5 stroke-current">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-[1]">
-                        <li><a class="font-bold" href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
+        <!-- Mobile Dropdown Menu -->
+        <div class="navbar-end lg:hidden">
+            <div class="dropdown dropdown-bottom dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="inline-block h-5 w-5 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
                 </div>
-            </div>
-
-            <!-- Center - Navigation Links -->
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-[1]">
                     <li><a class="font-bold" href="#">Home</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
@@ -81,38 +65,51 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
+        </div>
 
-            <!-- Right Side - Search, Cart, and Button -->
-            <div class="navbar-end hidden lg:flex">
-                <button class="btn btn-ghost btn-circle hide-on-sm">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </button>
-                <button class="btn btn-ghost btn-circle hide-on-sm">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                    </svg>
-                </button>
-                <button class="rounded-full btn bg-[#ABEF5F] text-[#1C1C1C] hover:bg-green-500 font-bold">
-                    Book Consult
-                    <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" id="up-left-arrow-circle"
-                        data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color rotate-90">
-                        <circle id="primary" cx="12" cy="12" r="10" style="fill: rgb(28, 28, 28);"></circle>
-                        <path id="secondary"
-                            d="M7.24,8.21l.7,3.73a1,1,0,0,0,1.55.57l.8-.8,4.54,4.53a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41l-4.53-4.54.8-.8a1,1,0,0,0-.57-1.55l-3.73-.7A.82.82,0,0,0,7.24,8.21Z"
-                            style="fill: rgb(255, 255, 255);"></path>
-                    </svg>
-                </button>
-            </div>
-        </nav>
+        <!-- Center - Navigation Links -->
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class="font-bold" href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Side - Search, Cart, and Button -->
+        <div class="navbar-end hidden lg:flex">
+            <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                </svg>
+            </button>
+            <button class="rounded-full btn bg-[#ABEF5F] text-[#1C1C1C] hover:bg-green-500 font-bold">
+                Book Consult
+                <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" id="up-left-arrow-circle"
+                    data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color rotate-90">
+                    <circle id="primary" cx="12" cy="12" r="10" style="fill: rgb(28, 28, 28);"></circle>
+                    <path id="secondary"
+                        d="M7.24,8.21l.7,3.73a1,1,0,0,0,1.55.57l.8-.8,4.54,4.53a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41l-4.53-4.54.8-.8a1,1,0,0,0-.57-1.55l-3.73-.7A.82.82,0,0,0,7.24,8.21Z"
+                        style="fill: rgb(255, 255, 255);"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    </header>
 
         <!-- Hero Section -->
-        <section>
+        <section class="md:container mx-auto">
             <!-- bg-base-200 -->
             <div class="hero">
                 <div class="hero-content text-center flex flex-col">
@@ -142,7 +139,7 @@
                 </div>
             </div>
         </section>
-    </header>
+    
 
     <!-- Main Section -->
     <main class="md:container mx-auto">
@@ -277,7 +274,7 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-4xl font-extrabold">30k+</h2>
-                        <p>Our Happy Client/p>
+                        <p>Our Happy Client</p>
                     </div>
                 </div>
                 <!-- Review Card 4 -->
@@ -334,27 +331,31 @@
                     <div class="bg-[#E7C1D3] p-6 rounded-lg text-left">
                         <img src="assets/concept.png" alt="Concept Icon" class="mb-4">
                         <h2 class="font-bold text-lg">Concept</h2>
-                        <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and
+                            modern.</p>
                     </div>
                     <div class="bg-[#EFDA6E] p-6 rounded-lg text-left">
                         <img src="assets/flow-chart.png" alt="Design Process Icon" class="mb-4">
                         <h2 class="font-bold text-lg">Design Process</h2>
-                        <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and
+                            modern.</p>
                     </div>
                     <div class="bg-[#A4DAC3] p-6 rounded-lg text-left">
                         <img src="assets/vision.png" alt="Supervision Icon" class="mb-4">
                         <h2 class="font-bold text-lg">Supervision</h2>
-                        <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and
+                            modern.</p>
                     </div>
                     <div class="bg-[#77AAEA] p-6 rounded-lg text-left">
                         <img src="assets/budget-planning.png" alt="Budget Planning Icon" class="mb-4">
                         <h2 class="font-bold text-lg">Budget Planning</h2>
-                        <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and
+                            modern.</p>
                     </div>
                 </div>
             </section>
         </main>
-        
+
 
 </body>
 
