@@ -1,130 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rinterio Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Our Works Process</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Manrope', 'sans-serif'],
-                    },
-                },
-            },
-            plugins: [daisyui],
-        }
-    </script>
 </head>
-<body class="bg-gray-100">
 
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="text-2xl font-bold text-gray-800">Rinterio</div>
-            <div class="hidden md:flex space-x-6">
-                <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900">Services</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900">Portfolio</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900">Blogs</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900">Contact Us</a>
+<main class="bg-gray-100">
+    <section class="md:container mx-auto p-8">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-extrabold">Our Works Process</h1>
+            <p class="mt-4 text-gray-600">
+                The barn house captivates with its blend of rustic charm and modern sophistication,
+                featuring weathered wood, sleek metal accents.
+            </p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <div class="bg-pink-100 p-6 rounded-lg text-center">
+                <img src="assets/concept-icon.png" alt="Concept Icon" class="mx-auto mb-4">
+                <h2 class="font-bold text-lg">Concept</h2>
+                <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
             </div>
-            <div class="md:hidden">
-                <button class="text-gray-700">
-                    <i class="fas fa-bars"></i>
-                </button>
+            <div class="bg-yellow-100 p-6 rounded-lg text-center">
+                <img src="assets/design-icon.png" alt="Design Process Icon" class="mx-auto mb-4">
+                <h2 class="font-bold text-lg">Design Process</h2>
+                <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="bg-cover bg-center h-screen text-black">
-        <div class="container mx-auto px-4">
-            <img src="assets/banner.png" alt="">
-        </div>
-        <div class="container mx-auto px-4 h-full flex items-center">
-            <div>
-                <h1 class="text-5xl font-bold mb-6">A Barn House of This Design Has a Striking Appearance</h1>
-                <p class="text-lg mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                <a href="#" class="btn btn-primary">View Details</a>
+            <div class="bg-green-100 p-6 rounded-lg text-center">
+                <img src="assets/supervision-icon.png" alt="Supervision Icon" class="mx-auto mb-4">
+                <h2 class="font-bold text-lg">Supervision</h2>
+                <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- About Us -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
-            <p class="text-center max-w-2xl mx-auto text-gray-600">We design thoughtful, liveable spaces. The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Commercial</h3>
-                    <p>The barn house captivates with its blend of rustic charm and modern sophistication.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Residential</h3>
-                    <p>The barn house captivates with its blend of rustic charm and modern sophistication.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Budget Planning</h3>
-                    <p>The barn house captivates with its blend of rustic charm and modern sophistication.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Design Process</h3>
-                    <p>The barn house captivates with its blend of rustic charm and modern sophistication.</p>
-                </div>
+            <div class="bg-blue-100 p-6 rounded-lg text-center">
+                <img src="assets/budget-icon.png" alt="Budget Planning Icon" class="mx-auto mb-4">
+                <h2 class="font-bold text-lg">Budget Planning</h2>
+                <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
             </div>
         </div>
     </section>
+</main>
 
-    <!-- Portfolio -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">Explore our Latest Works</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Commercial</h3>
-                    <p>The barn house captivates with its blend of rustic charm and modern sophistication.</p>
-                    <a href="#" class="text-primary mt-4 block">View Details</a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Residential</h3>
-                    <p>The barn house captivates with its blend of rustic charm and modern sophistication.</p>
-                    <a href="#" class="text-primary mt-4 block">View Details</a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Supervision</h3>
-                    <p>The barn house captivates with its blend of rustic charm and modern sophistication.</p>
-                    <a href="#" class="text-primary mt-4 block">View Details</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">Let’s Connect</h2>
-            <form class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                    <input type="text" placeholder="First Name" class="input input-bordered w-full" required>
-                    <input type="text" placeholder="Last Name" class="input input-bordered w-full" required>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                    <input type="tel" placeholder="Phone Number" class="input input-bordered w-full" required>
-                    <input type="email" placeholder="Email" class="input input-bordered w-full" required>
-                </div>
-                <textarea class="textarea textarea-bordered w-full mb-4" placeholder="Write your message here"></textarea>
-                <button type="submit" class="btn btn-primary w-full">Send Mail</button>
-            </form>
-        </div>
+</html>
