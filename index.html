@@ -94,7 +94,7 @@
                             d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                     </svg>
                 </button>
-                <button class="rounded-full btn bg-[#ABEF5F] text-[#1C1C1C] hover:bg-green-500 font-bold">
+                <button class="rounded-full btn bg-[#ABEF5F] text-[#1C1C1C] hover:bg-gray-200 font-bold">
                     Book Consult
                     <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" id="up-left-arrow-circle"
                         data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color rotate-90">
@@ -124,7 +124,7 @@
                         natural light.
                     </p>
                     <button
-                        class="rounded-full btn bg-[#ABEF5F80] text-[#1C1C1C] hover:bg-green-500 font-bold w-full md:w-auto">
+                        class="rounded-full btn bg-[#ABEF5F80] text-[#1C1C1C] hover:bg-gray-200 font-bold w-full md:w-auto">
                         View Details
                         <svg fill="#000000" width="32px" height="32px" viewBox="0 0 24 24" id="up-left-arrow-circle"
                             data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color rotate-90">
@@ -652,38 +652,43 @@
         </section>
 
         <!-- Form Section -->
-        <section class="md:container mx-auto px-11 py-16 bg-[url('assets/bg.jpg')]">
-
-            <div class="">
-                <div class="grid lg:grid-cols-2 p-5 gap-5">
-                    <label class="input input-bordered rounded-full flex items-center gap-2">
-
-                        <input type="text" class="grow" placeholder="First Name" />
-                    </label>
-                    <label class="input input-bordered rounded-full flex items-center gap-2">
-
-                        <input type="text" class="grow" placeholder="First Name" />
-                    </label>
-                    <label class="input input-bordered rounded-full flex items-center gap-2">
-
-                        <input type="text" class="grow" placeholder="Mobile No" />
-                    </label>
-                    <label class="input input-bordered rounded-full flex items-center gap-2">
-
-                        <input type="text" class="grow" placeholder="Email ID" />
-                    </label>
-                    
-                </div>
-                <div>
-                    <textarea placeholder="Bio"
-                        class="textarea textarea-bordered textarea-lg rounded-3xl flex items-center gap-2 w-full max-w-xs"></textarea>
-
-                    <!-- <label class="input input-bordered w-96 h-56 rounded-3xl flex items-center gap-2">
-                        <input type="text" placeholder="Type here" class="input w-full" />
-                    </label> -->
+        <section class="md:container mx-auto px-11 py-16 bg-cover bg-center bg-[url('assets/bg.jpg')]">
+            <div class="flex items-center justify-center min-h-screen">
+                <div class="p-8 max-w-4xl w-full">
+                    <button
+                        class="flex items-center justify-center mb-6 mx-auto text-center rounded-full btn bg-[#ABEF5F33] text-[#1C1C1C] hover:bg-gray-200 font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512" class="mr-2">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                        </svg>
+                        Let's Connect
+                    </button>
+                    <h1 class="text-3xl font-extrabold text-center mb-2">Let’s Discuss Next Project</h1>
+                    <p class="text-center text-gray-600 mb-6">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <input type="text" placeholder="First Name*" class="input rounded-full w-full" />
+                            <input type="text" placeholder="Last Name*" class="input rounded-full w-full" />
+                            <input type="text" placeholder="Phone Number*" class="input rounded-full w-full" />
+                            <input type="email" placeholder="Email*" class="input rounded-full w-full" />
+                        </div>
+                        <textarea placeholder="Write your message here"
+                            class="textarea rounded-3xl w-full mb-4 h-32"></textarea>
+                        <button
+                            class="w-full flex items-center justify-center rounded-full btn bg-[#ABEF5F] text-[#1C1C1C] hover:bg-[#93d14d] font-bold">
+                            Send Mail
+                            <svg fill="#1C1C1C" width="24px" height="24px" viewBox="0 0 24 24" class="ml-2 rotate-90">
+                                <circle id="primary" cx="12" cy="12" r="10" style="fill: rgb(28, 28, 28);"></circle>
+                                <path id="secondary"
+                                    d="M7.24,8.21l.7,3.73a1,1,0,0,0,1.55.57l.8-.8,4.54,4.53a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41l-4.53-4.54.8-.8a1,1,0,0,0-.57-1.55l-3.73-.7A.82.82,0,0,0,7.24,8.21Z"
+                                    style="fill: rgb(255, 255, 255);"></path>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
-
         </section>
 
 
@@ -718,7 +723,7 @@
                 </nav>
                 <br>
                 <button
-                    class="rounded-full btn bg-[#ABEF5F] text-[#1C1C1C] hover:bg-green-500 font-bold w-full md:w-auto">
+                    class="rounded-full btn bg-[#ABEF5F] text-[#1C1C1C] hover:bg-gray-200 font-bold w-full lg:w-auto md:w-auto">
                     View Details
                     <svg fill="#000000" width="32px" height="32px" viewBox="0 0 24 24" id="up-left-arrow-circle"
                         data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color rotate-90">
