@@ -145,7 +145,7 @@
 
         <!-- About Us Section -->
         <section class="bg-base-200">
-            <img src="assets/Vector.png" alt="">
+            <img class="relative lg:block hidden" src="assets/Vector.png" alt="">
             <div class="hero min-h-screen">
                 <div class="hero-content flex-col lg:flex-row">
                     <div class="text-center lg:text-left">
@@ -358,99 +358,84 @@
         </main>
 
         <!-- Latest Portfolio Section -->
-
-        <section class="md:container mx-auto p-8 bg-base-200">
-            <div class="text-center mb-8">
-                <h1 class="text-4xl font-bold">Our Latest Portfolio</h1>
-                <p class="text-gray-600 mt-2">The barn house captivates with its blend of rustic charm and modern
-                    sophistication, featuring weathered wood, sleek metal accents.</p>
+        <section class="md:container mx-auto px-6 py-16 bg-cover bg-center bg-base-200">
+            <div class="text-center space-y-3 mb-10">
+                <button
+                    class="flex items-center justify-center mx-auto text-center rounded-full btn bg-[#ABEF5F33] text-[#1C1C1C] hover:bg-gray-200 font-bold px-4 py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512" class="mr-2">
+                        <path
+                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                    </svg>
+                    Explore our Latest works
+                </button>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-center">Our Latest Portfolio</h1>
+                <p class="text-center text-gray-600 text-base md:text-lg">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents.
+                </p>
             </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
-                <!-- Large Card -->
-                <div class="card bordered shadow-lg col-span-1 lg:col-span-2">
-                    <figure>
-                        <img src="assets/img1.png" alt="Commercial Building" class="rounded-t-lg" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Commercial</h2>
-                        <p>The barn house captivates with its blend of rustic charm and modern. The barn house
-                            captivates with its blend of rustic charm and modern.</p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">
-                                View Details
-                                <span class="ml-2">➜</span>
-                            </button>
-                        </div>
+        
+            <!-- Latest content grid -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center mx-auto w-full md:w-[1180px]">
+                <!-- 1st col -->
+                <div class="md:col-span-8 flex flex-col md:flex-row border border-gray-200 rounded-2xl p-6 md:p-8">
+                    <div class="flex-shrink-0 mx-auto">
+                        <img class="mx-auto" src="./assets/img1.png" alt="">
+                    </div>
+                    <div class="space-y-4 mt-4 md:mt-0 md:ml-10 text-center md:text-left">
+                        <h4 class="text-2xl font-extrabold text-[#494949]">Commercial</h4>
+                        <p class="text-base font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
+                        <button class="btn btn-ghost font-extrabold">View Details 
+                            <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" id="up-left-arrow-circle" data-name="Flat Color"
+                                xmlns="http://www.w3.org/2000/svg" class="icon flat-color rotate-90 ml-2">
+                                <circle id="primary" cx="12" cy="12" r="10" style="fill: rgb(171, 239, 95);"></circle>
+                                <path id="secondary"
+                                    d="M7.24,8.21l.7,3.73a1,1,0,0,0,1.55.57l.8-.8,4.54,4.53a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41l-4.53-4.54.8-.8a1,1,0,0,0-.57-1.55l-3.73-.7A.82.82,0,0,0,7.24,8.21Z"
+                                    style="fill: rgb(28, 28, 28);"></path>
+                            </svg>
+                        </button>
                     </div>
                 </div>
-
-                <!-- Smaller Cards -->
-                <div class="card bordered shadow-lg">
-                    <figure>
-                        <img src="assets/img2.png" alt="Commercial Building" class="rounded-t-lg" />
-                    </figure>
-                    <!-- <div class="card-body">
-                        <h2 class="card-title">Commercial</h2>
-                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">
-                                View Details
-                                <span class="ml-2">➜</span>
-                            </button>
-                        </div>
-                    </div> -->
+        
+                <!-- 2nd col -->
+                <div class="md:col-span-4 border border-gray-200 p-6 md:p-8 rounded-2xl">
+                    <img class="mx-auto" src="./assets/img2.png" alt="">
                 </div>
-
-                <div class="card bordered shadow-lg">
-                    <figure>
-                        <img src="assets/img3.png" alt="Commercial Building" class="rounded-lg mb-4" />
-                    </figure>
-                    <!-- <div class="card-body">
-                        <h2 class="card-title">Commercial</h2>
-                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">
-                                View Details
-                                <span class="ml-2">➜</span>
-                            </button>
-                        </div>
-                    </div> -->
+        
+                <!-- 3rd col -->
+                <div class="md:col-span-3 border border-gray-200 p-6 md:p-8 rounded-2xl">
+                    <img class="mx-auto" src="./assets/img3.png" alt="">
                 </div>
-
-                <div class="card bordered shadow-lg">
-                    <figure>
-                        <img src="assets/img4.png" alt="Commercial Building" class="rounded-t-lg" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Commercial</h2>
-                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">
-                                View Details
-                                <span class="ml-2">➜</span>
-                            </button>
-                        </div>
+        
+                <!-- 4th col -->
+                <div class="md:col-span-6 flex flex-col md:flex-row items-center border border-gray-200 p-6 rounded-2xl">
+                    <div class="flex-shrink-0 mx-auto">
+                        <img class="mx-auto" src="./assets/img4.png" alt="">
+                    </div>
+                    <div class="space-y-4 mt-4 md:mt-0 md:ml-10 text-center md:text-left">
+                        <h4 class="text-2xl font-extrabold text-[#494949]">Commercial</h4>
+                        <p class="text-base font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <button class="btn btn-ghost font-extrabold">View Details 
+                            <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" id="up-left-arrow-circle" data-name="Flat Color"
+                                xmlns="http://www.w3.org/2000/svg" class="icon flat-color rotate-90 ml-2">
+                                <circle id="primary" cx="12" cy="12" r="10" style="fill: rgb(171, 239, 95);"></circle>
+                                <path id="secondary"
+                                    d="M7.24,8.21l.7,3.73a1,1,0,0,0,1.55.57l.8-.8,4.54,4.53a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41l-4.53-4.54.8-.8a1,1,0,0,0-.57-1.55l-3.73-.7A.82.82,0,0,0,7.24,8.21Z"
+                                    style="fill: rgb(28, 28, 28);"></path>
+                            </svg>
+                        </button>
                     </div>
                 </div>
-
-                <div class="card bordered shadow-lg">
-                    <figure>
-                        <img src="assets/img5.png" alt="Commercial Building" class="rounded-t-lg" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Commercial</h2>
-                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">
-                                View Details
-                                <span class="ml-2">➜</span>
-                            </button>
-                        </div>
-                    </div>
+        
+                <!-- 5th col -->
+                <div class="md:col-span-3 border border-gray-200 p-6 md:p-7 rounded-2xl">
+                    <img class="mx-auto" src="./assets/img5.png" alt="">
                 </div>
             </div>
         </section>
+        
+
+
 
         <!-- Architecture and News Section -->
 
@@ -657,7 +642,8 @@
                 <div class="p-8 max-w-4xl w-full">
                     <button
                         class="flex items-center justify-center mb-6 mx-auto text-center rounded-full btn bg-[#ABEF5F33] text-[#1C1C1C] hover:bg-gray-200 font-bold">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512" class="mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512"
+                            class="mr-2">
                             <path
                                 d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                         </svg>
@@ -665,7 +651,8 @@
                     </button>
                     <h1 class="text-3xl font-extrabold text-center mb-2">Let’s Discuss Next Project</h1>
                     <p class="text-center text-gray-600 mb-6">
-                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents.
                     </p>
                     <form>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
